@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>After Hours — A Psychological Mystery VN</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main id="game">
+    <header class="topbar">
+      <h1>After Hours</h1>
+      <div class="links">
+        <a id="sourceLink" href="https://github.com/pratigyakunwar4-beep/psych-mystery-vn" target="_blank" rel="noopener">Source</a>
+        <a id="demoLink" href="https://pratigyakunwar4-beep.github.io/psych-mystery-vn/" target="_blank" rel="noopener">Demo</a>
+      </div>
+    </header>
+
+    <section id="scene" class="card">
+      <div id="portrait" aria-hidden="true"></div>
+      <div id="text" class="text"></div>
+      <div id="choices" class="choices"></div>
+      <div id="controls" class="controls">
+        <button id="playMusic" class="small">Play Ambient</button>
+        <button id="muteSfx" class="small">Toggle Click SFX</button>
+      </div>
+      <div id="stats" class="stats" aria-hidden="true">
+        <div class="stat">Trust: <span id="statTrust">0</span></div>
+        <div class="stat">Fear: <span id="statFear">0</span></div>
+        <div class="stat">Truth: <span id="statTruth">0</span></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <small>Short game — ~5–10 minutes. Use choices to shape the outcome.</small>
+    </footer>
+  </main>
+
+  <!-- Optional audio. Replace files in assets/ with your own ambient and click SFX or use remote links -->
+  <audio id="ambient" loop src="assets/ambient.mp3"></audio>
+  <audio id="click" src="assets/click.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
